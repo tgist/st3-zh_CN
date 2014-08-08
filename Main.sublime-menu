@@ -332,7 +332,7 @@
             { "command": "show_panel", "args": {"panel": "incremental_find", "reverse": false}, "caption": "渐进式查找" },
             { "caption": "-" },
             { "command": "show_panel", "args": {"panel": "replace", "reverse": false}, "caption": "替换..." },
-            { "command": "replace_next" },
+            { "command": "replace_next", "caption": "替换下一个" },
             { "caption": "-" },
             { "command": "find_under", "caption": "快速查找" },
             { "command": "find_all_under", "caption": "快速查找全部" },
@@ -869,6 +869,7 @@
         [
             { "command": "open_url", "args": {"url": "http://www.sublimetext.com/docs/3/"}, "caption": "文档" },
             { "command": "open_url", "args": {"url": "http://twitter.com/sublimehq"}, "caption": "Twitter" },
+            { "command": "open_url", "args": {"url": "https://github.com/Havanna/st3-zh_CN"}, "caption": "Sublime Text 中文化" },
             { "caption": "-" },
             { "command": "purchase_license", "caption": "购买许可证"},
             { "command": "show_license_window", "caption": "输入许可证" },
