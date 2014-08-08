@@ -869,7 +869,7 @@
         [
             { "command": "open_url", "args": {"url": "http://www.sublimetext.com/docs/3/"}, "caption": "文档" },
             { "command": "open_url", "args": {"url": "http://twitter.com/sublimehq"}, "caption": "Twitter" },
-            { "command": "open_url", "args": {"url": "https://github.com/Havanna/st3-zh_CN"}, "caption": "Sublime Text 中文化" },
+            { "command": "open_url", "args": {"url": "https://github.com/Ihavee/st3-zh_CN"}, "caption": "Sublime Text 中文化" },
             { "caption": "-" },
             { "command": "purchase_license", "caption": "购买许可证"},
             { "command": "show_license_window", "caption": "输入许可证" },
