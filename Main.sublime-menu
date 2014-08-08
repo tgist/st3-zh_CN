@@ -35,7 +35,7 @@
                     { "command": "open_recent_folder", "args": {"index": 6 } },
                     { "command": "open_recent_folder", "args": {"index": 7 } },
                     { "caption": "-" },
-                    { "command": "clear_recent_files", "caption": "清除历史" }
+                    { "command": "clear_recent_files", "caption": "清除记录" }
                 ]
             },
             {
@@ -197,7 +197,7 @@
                     { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"}, "caption": "删除至结尾处" },
                     { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"}, "caption": "删除至起点处" },
                     { "caption": "-" },
-                    { "command": "transpose" }
+                    { "command": "transpose", "caption": "词互换" }
                 ]
             },
             {
@@ -205,8 +205,8 @@
                 "id": "tag",
                 "children":
                 [
-                    { "command": "close_tag", "caption": "设置标记" },
-                    { "command": "expand_selection", "args": {"to": "tag"}, "caption": "选择父标签对" },
+                    { "command": "close_tag", "caption": "闭合当前标签" },
+                    { "command": "expand_selection", "args": {"to": "tag"}, "caption": "选择光标位置父标签对" },
                     { "command": "insert_snippet", "args": { "name": "Packages/XML/long-tag.sublime-snippet" }, "caption": "包含所选内容的标签" }
                 ]
             },
@@ -216,24 +216,24 @@
                 "children":
                 [
                     { "command": "set_mark", "caption": "设置标记" },
-                    { "command": "select_to_mark", "caption": "选择已标记" },
-                    { "command": "delete_to_mark", "caption": "删除已标记" },
-                    { "command": "swap_with_mark", "caption": "交换标记" },
+                    { "command": "select_to_mark", "caption": "选择已标志" },
+                    { "command": "delete_to_mark", "caption": "删除已标志" },
+                    { "command": "swap_with_mark", "caption": "交换标志" },
                     { "command": "clear_bookmarks", "args": {"name": "mark"}, "caption": "清除标记" },
                     { "caption": "-" },
                     { "command": "yank", "caption": "抽出" }
                 ]
             },
             {
-                "caption": "代码折叠",
+                "caption": "折叠代码",
                 "id": "fold",
                 "children":
                 [
                     { "command": "fold", "caption": "折叠" },
                     { "command": "unfold", "caption": "展开" },
-                    { "command": "unfold_all", "caption": "全部展开" },
+                    { "command": "unfold_all", "caption": "展开全部" },
                     { "caption": "-" },
-                    { "caption": "Fold All", "caption": "全部折叠", "command": "fold_by_level", "args": {"level": 1} },
+                    { "caption": "折叠 所有",  "command": "fold_by_level", "args": {"level": 1} },
                     { "caption": "折叠 2 层", "command": "fold_by_level", "args": {"level": 2} },
                     { "caption": "折叠 3 层", "command": "fold_by_level", "args": {"level": 3} },
                     { "caption": "折叠 4 层", "command": "fold_by_level", "args": {"level": 4} },
@@ -505,7 +505,7 @@
                 ]
             },
             {
-                "caption": "交点分组",
+                "caption": "焦点分组",
                 "mnemonic": "F",
                 "children":
                 [
@@ -548,19 +548,19 @@
                 [
                     { "command": "toggle_setting", "args": {"setting": "translate_tabs_to_spaces"}, "caption": "使用空格缩进", "checkbox": true },
                     { "caption": "-" },
-                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 1}, "caption": "标签宽度：1", "checkbox": true },
-                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 2}, "caption": "标签宽度：2", "checkbox": true },
-                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 3}, "caption": "标签宽度：3", "checkbox": true },
-                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 4}, "caption": "标签宽度：4", "checkbox": true },
-                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 5}, "caption": "标签宽度：5", "checkbox": true },
-                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 6}, "caption": "标签宽度：6", "checkbox": true },
-                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 7}, "caption": "标签宽度：7", "checkbox": true },
-                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 8}, "caption": "标签宽度：8", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 1}, "caption": "Tab 宽度：1", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 2}, "caption": "Tab 宽度：2", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 3}, "caption": "Tab 宽度：3", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 4}, "caption": "Tab 宽度：4", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 5}, "caption": "Tab 宽度：5", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 6}, "caption": "Tab 宽度：6", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 7}, "caption": "Tab 宽度：7", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 8}, "caption": "Tab 宽度：8", "checkbox": true },
                     { "caption": "-" },
                     { "command": "detect_indentation", "caption": "猜测来自缓冲区的设置" },
                     { "caption": "-" },
                     { "command": "expand_tabs", "caption": "转换缩进为空格", "args": {"set_translate_tabs": true} },
-                    { "command": "unexpand_tabs", "caption": "转换标签为 Tabs", "args": {"set_translate_tabs": true} }
+                    { "command": "unexpand_tabs", "caption": "转换缩进为 Tab", "args": {"set_translate_tabs": true} }
                 ]
             },
             {
@@ -623,7 +623,7 @@
             { "command": "show_overlay", "args": {"overlay": "goto", "text": "@"}, "caption": "跳转到符号..." },
             { "command": "goto_symbol_in_project", "caption": "跳转到项目符号..." },
             { "command": "goto_definition", "caption": "自定义跳转..." },
-            // { "command": "show_overlay", "args": {"overlay": "goto", "text": "#"}, "caption": "Goto Word…" },
+            // { "command": "show_overlay", "args": {"overlay": "goto", "text": "#"}, "caption": "跳转到单词..." },
             { "command": "show_overlay", "args": {"overlay": "goto", "text": ":"}, "caption": "跳转到行..." },
             { "caption": "-" },
             { "command": "jump_back", "caption": "跳转返回" },
@@ -727,7 +727,7 @@
                     { "command": "set_build_system", "args": {"index": 7}, "checkbox": true },
                     { "command": "$build_systems" },
                     { "caption": "-" },
-                    { "command": "new_build_system", "caption": "New Build System…" }
+                    { "command": "new_build_system", "caption": "新编译系统..." }
                 ]
             },
             { "command": "build", "caption": "编译", "mnemonic": "B" },
@@ -766,7 +766,7 @@
         [
             { "command": "prompt_open_project_or_workspace", "caption": "打开项目..." },
             { "command": "prompt_switch_project_or_workspace", "caption": "切换项目" },
-            { "command": "prompt_select_workspace", "caption": "快速切换项目", "mnemonic": "S" },
+            { "command": "prompt_select_workspace", "caption": "快速选择切换项目", "mnemonic": "S" },
             {
                 "caption": "最近项目",
                 "children":
@@ -817,7 +817,7 @@
                 "caption": "设置 – 更多",
                 "children":
                 [
-                    { "command": "open_file_settings", "caption": "特殊语法 – 用户" },
+                    { "command": "open_file_settings", "caption": "特定语法 – 用户" },
                     {
                         "command": "open_file", "args":
                         {
@@ -842,7 +842,7 @@
                     "file": "${packages}/User/Default ($platform).sublime-keymap",
                     "contents": "[\n\t$0\n]\n"
                 },
-                "caption": "案件绑定 – 用户"
+                "caption": "按键绑定 – 用户"
             },
             { "caption": "-" },
             {
