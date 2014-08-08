@@ -1,21 +1,21 @@
 [
     {
-        "caption": "File",
+        "caption": "文件",
         "mnemonic": "F",
         "id": "file",
         "children":
         [
-            { "command": "new_file", "caption": "New File", "mnemonic": "N" },
+            { "command": "new_file", "caption": "新建文件", "mnemonic": "N" },
 
-            { "command": "prompt_open_file", "caption": "Open File…", "mnemonic": "O", "platform": "!OSX" },
-            { "command": "prompt_open_folder", "caption": "Open Folder…", "platform": "!OSX" },
-            { "command": "prompt_open", "caption": "Open…", "platform": "OSX" },
+            { "command": "prompt_open_file", "caption": "打开文件...", "mnemonic": "O", "platform": "!OSX" },
+            { "command": "prompt_open_folder", "caption": "打开文件夹...", "platform": "!OSX" },
+            { "command": "prompt_open", "caption": "打开...", "platform": "OSX" },
             {
-                "caption": "Open Recent",
+                "caption": "最近打开",
                 "mnemonic": "R",
                 "children":
                 [
-                    { "command": "reopen_last_file", "caption": "Reopen Closed File" },
+                    { "command": "reopen_last_file", "caption": "重新打开已关闭的文件" },
                     { "caption": "-" },
                     { "command": "open_recent_file", "args": {"index": 0 } },
                     { "command": "open_recent_file", "args": {"index": 1 } },
@@ -35,359 +35,359 @@
                     { "command": "open_recent_folder", "args": {"index": 6 } },
                     { "command": "open_recent_folder", "args": {"index": 7 } },
                     { "caption": "-" },
-                    { "command": "clear_recent_files", "caption": "Clear Items" }
+                    { "command": "clear_recent_files", "caption": "清除历史" }
                 ]
             },
             {
-                "caption": "Reopen with Encoding",
+                "caption": "重新打开字符编码",
                 "children":
                 [
                     { "caption": "UTF-8", "command": "reopen", "args": {"encoding": "utf-8" } },
                     { "caption": "UTF-16 LE", "command": "reopen", "args": {"encoding": "utf-16 le" } },
                     { "caption": "UTF-16 BE", "command": "reopen", "args": {"encoding": "utf-16 be" } },
                     { "caption": "-" },
-                    { "caption": "Western (Windows 1252)", "command": "reopen", "args": {"encoding": "Western (Windows 1252)" } },
-                    { "caption": "Western (ISO 8859-1)", "command": "reopen", "args": {"encoding": "Western (ISO 8859-1)" } },
-                    { "caption": "Western (ISO 8859-3)", "command": "reopen", "args": {"encoding": "Western (ISO 8859-3)" } },
-                    { "caption": "Western (ISO 8859-15)", "command": "reopen", "args": {"encoding": "Western (ISO 8859-15)" } },
-                    { "caption": "Western (Mac Roman)", "command": "reopen", "args": {"encoding": "Western (Mac Roman)" } },
+                    { "caption": "西欧 (Windows 1252)", "command": "reopen", "args": {"encoding": "Western (Windows 1252)" } },
+                    { "caption": "西欧 (ISO 8859-1)", "command": "reopen", "args": {"encoding": "Western (ISO 8859-1)" } },
+                    { "caption": "西欧 (ISO 8859-3)", "command": "reopen", "args": {"encoding": "Western (ISO 8859-3)" } },
+                    { "caption": "西欧 (ISO 8859-15)", "command": "reopen", "args": {"encoding": "Western (ISO 8859-15)" } },
+                    { "caption": "西欧 (Mac Roman)", "command": "reopen", "args": {"encoding": "Western (Mac Roman)" } },
                     { "caption": "DOS (CP 437)", "command": "reopen", "args": {"encoding": "DOS (CP 437)" } },
-                    { "caption": "Arabic (Windows 1256)", "command": "reopen", "args": {"encoding": "Arabic (Windows 1256)" } },
-                    { "caption": "Arabic (ISO 8859-6)", "command": "reopen", "args": {"encoding": "Arabic (ISO 8859-6)" } },
-                    { "caption": "Baltic (Windows 1257)", "command": "reopen", "args": {"encoding": "Baltic (Windows 1257)" } },
-                    { "caption": "Baltic (ISO 8859-4)", "command": "reopen", "args": {"encoding": "Baltic (ISO 8859-4)" } },
-                    { "caption": "Celtic (ISO 8859-14)", "command": "reopen", "args": {"encoding": "Celtic (ISO 8859-14)" } },
-                    { "caption": "Central European (Windows 1250)", "command": "reopen", "args": {"encoding": "Central European (Windows 1250)" } },
-                    { "caption": "Central European (ISO 8859-2)", "command": "reopen", "args": {"encoding": "Central European (ISO 8859-2)" } },
-                    { "caption": "Cyrillic (Windows 1251)", "command": "reopen", "args": {"encoding": "Cyrillic (Windows 1251)" } },
-                    { "caption": "Cyrillic (Windows 866)", "command": "reopen", "args": {"encoding": "Cyrillic (Windows 866)" } },
-                    { "caption": "Cyrillic (ISO 8859-5)", "command": "reopen", "args": {"encoding": "Cyrillic (ISO 8859-5)" } },
-                    { "caption": "Cyrillic (KOI8-R)", "command": "reopen", "args": {"encoding": "Cyrillic (KOI8-R)" } },
-                    { "caption": "Cyrillic (KOI8-U)", "command": "reopen", "args": {"encoding": "Cyrillic (KOI8-U)" } },
-                    { "caption": "Estonian (ISO 8859-13)", "command": "reopen", "args": {"encoding": "Estonian (ISO 8859-13)" } },
-                    { "caption": "Greek (Windows 1253)", "command": "reopen", "args": {"encoding": "Greek (Windows 1253)" } },
-                    { "caption": "Greek (ISO 8859-7)", "command": "reopen", "args": {"encoding": "Greek (ISO 8859-7)" } },
-                    { "caption": "Hebrew (Windows 1255)", "command": "reopen", "args": {"encoding": "Hebrew (Windows 1255)" } },
-                    { "caption": "Hebrew (ISO 8859-8)", "command": "reopen", "args": {"encoding": "Hebrew (ISO 8859-8)" } },
-                    { "caption": "Nordic (ISO 8859-10)", "command": "reopen", "args": {"encoding": "Nordic (ISO 8859-10)" } },
-                    { "caption": "Romanian (ISO 8859-16)", "command": "reopen", "args": {"encoding": "Romanian (ISO 8859-16)" } },
-                    { "caption": "Turkish (Windows 1254)", "command": "reopen", "args": {"encoding": "Turkish (Windows 1254)" } },
-                    { "caption": "Turkish (ISO 8859-9)", "command": "reopen", "args": {"encoding": "Turkish (ISO 8859-9)" } },
-                    { "caption": "Vietnamese (Windows 1258)", "command": "reopen", "args": {"encoding": "Vietnamese (Windows 1258)" } },
+                    { "caption": "阿拉伯 (Windows 1256)", "command": "reopen", "args": {"encoding": "Arabic (Windows 1256)" } },
+                    { "caption": "阿拉伯 (ISO 8859-6)", "command": "reopen", "args": {"encoding": "Arabic (ISO 8859-6)" } },
+                    { "caption": "波罗的海 (Windows 1257)", "command": "reopen", "args": {"encoding": "Baltic (Windows 1257)" } },
+                    { "caption": "波罗的海 (ISO 8859-4)", "command": "reopen", "args": {"encoding": "Baltic (ISO 8859-4)" } },
+                    { "caption": "凯尔特 (ISO 8859-14)", "command": "reopen", "args": {"encoding": "Celtic (ISO 8859-14)" } },
+                    { "caption": "中欧 (Windows 1250)", "command": "reopen", "args": {"encoding": "Central European (Windows 1250)" } },
+                    { "caption": "中欧 (ISO 8859-2)", "command": "reopen", "args": {"encoding": "Central European (ISO 8859-2)" } },
+                    { "caption": "西里尔 (Windows 1251)", "command": "reopen", "args": {"encoding": "Cyrillic (Windows 1251)" } },
+                    { "caption": "西里尔 (Windows 866)", "command": "reopen", "args": {"encoding": "Cyrillic (Windows 866)" } },
+                    { "caption": "西里尔 (ISO 8859-5)", "command": "reopen", "args": {"encoding": "Cyrillic (ISO 8859-5)" } },
+                    { "caption": "西里尔 (KOI8-R)", "command": "reopen", "args": {"encoding": "Cyrillic (KOI8-R)" } },
+                    { "caption": "西里尔 (KOI8-U)", "command": "reopen", "args": {"encoding": "Cyrillic (KOI8-U)" } },
+                    { "caption": "爱沙尼亚 (ISO 8859-13)", "command": "reopen", "args": {"encoding": "Estonian (ISO 8859-13)" } },
+                    { "caption": "希腊 (Windows 1253)", "command": "reopen", "args": {"encoding": "Greek (Windows 1253)" } },
+                    { "caption": "希腊 (ISO 8859-7)", "command": "reopen", "args": {"encoding": "Greek (ISO 8859-7)" } },
+                    { "caption": "希伯来 (Windows 1255)", "command": "reopen", "args": {"encoding": "Hebrew (Windows 1255)" } },
+                    { "caption": "希伯来 (ISO 8859-8)", "command": "reopen", "args": {"encoding": "Hebrew (ISO 8859-8)" } },
+                    { "caption": "北欧 (ISO 8859-10)", "command": "reopen", "args": {"encoding": "Nordic (ISO 8859-10)" } },
+                    { "caption": "罗马尼亚 (ISO 8859-16)", "command": "reopen", "args": {"encoding": "Romanian (ISO 8859-16)" } },
+                    { "caption": "土耳其 (Windows 1254)", "command": "reopen", "args": {"encoding": "Turkish (Windows 1254)" } },
+                    { "caption": "土耳其 (ISO 8859-9)", "command": "reopen", "args": {"encoding": "Turkish (ISO 8859-9)" } },
+                    { "caption": "越南 (Windows 1258)", "command": "reopen", "args": {"encoding": "Vietnamese (Windows 1258)" } },
                     { "caption": "-" },
-                    { "caption": "Hexadecimal", "command": "reopen", "args": {"encoding": "Hexadecimal" } }
+                    { "caption": "十六进制", "command": "reopen", "args": {"encoding": "Hexadecimal" } }
                 ]
             },
-            { "command": "clone_file", "caption": "New View into File", "mnemonic": "e" },
-            { "command": "save", "caption": "Save", "mnemonic": "S" },
+            { "command": "clone_file", "caption": "文件新视图", "mnemonic": "e" },
+            { "command": "save", "caption": "保存", "mnemonic": "S" },
             {
-                "caption": "Save with Encoding",
+                "caption": "保存编码方式",
                 "children":
                 [
                     { "caption": "UTF-8", "command": "save", "args": {"encoding": "utf-8" } },
-                    { "caption": "UTF-8 with BOM", "command": "save", "args": {"encoding": "utf-8 with bom" } },
+                    { "caption": "UTF-8 包含 BOM", "command": "save", "args": {"encoding": "utf-8 with bom" } },
                     { "caption": "UTF-16 LE", "command": "save", "args": {"encoding": "utf-16 le" } },
-                    { "caption": "UTF-16 LE with BOM", "command": "save", "args": {"encoding": "utf-16 le with bom" } },
+                    { "caption": "UTF-16 LE 包含 BOM", "command": "save", "args": {"encoding": "utf-16 le with bom" } },
                     { "caption": "UTF-16 BE", "command": "save", "args": {"encoding": "utf-16 be" } },
-                    { "caption": "UTF-16 BE with BOM", "command": "save", "args": {"encoding": "utf-16 be with bom" } },
+                    { "caption": "UTF-16 BE 包含 BOM", "command": "save", "args": {"encoding": "utf-16 be with bom" } },
                     { "caption": "-" },
-                    { "caption": "Western (Windows 1252)", "command": "save", "args": {"encoding": "Western (Windows 1252)" } },
-                    { "caption": "Western (ISO 8859-1)", "command": "save", "args": {"encoding": "Western (ISO 8859-1)" } },
-                    { "caption": "Western (ISO 8859-3)", "command": "save", "args": {"encoding": "Western (ISO 8859-3)" } },
-                    { "caption": "Western (ISO 8859-15)", "command": "save", "args": {"encoding": "Western (ISO 8859-15)" } },
-                    { "caption": "Western (Mac Roman)", "command": "save", "args": {"encoding": "Western (Mac Roman)" } },
+                    { "caption": "西欧 (Windows 1252)", "command": "save", "args": {"encoding": "Western (Windows 1252)" } },
+                    { "caption": "西欧 (ISO 8859-1)", "command": "save", "args": {"encoding": "Western (ISO 8859-1)" } },
+                    { "caption": "西欧 (ISO 8859-3)", "command": "save", "args": {"encoding": "Western (ISO 8859-3)" } },
+                    { "caption": "西欧 (ISO 8859-15)", "command": "save", "args": {"encoding": "Western (ISO 8859-15)" } },
+                    { "caption": "西欧 (Mac Roman)", "command": "save", "args": {"encoding": "Western (Mac Roman)" } },
                     { "caption": "DOS (CP 437)", "command": "save", "args": {"encoding": "DOS (CP 437)" } },
-                    { "caption": "Arabic (Windows 1256)", "command": "save", "args": {"encoding": "Arabic (Windows 1256)" } },
-                    { "caption": "Arabic (ISO 8859-6)", "command": "save", "args": {"encoding": "Arabic (ISO 8859-6)" } },
-                    { "caption": "Baltic (Windows 1257)", "command": "save", "args": {"encoding": "Baltic (Windows 1257)" } },
-                    { "caption": "Baltic (ISO 8859-4)", "command": "save", "args": {"encoding": "Baltic (ISO 8859-4)" } },
-                    { "caption": "Celtic (ISO 8859-14)", "command": "save", "args": {"encoding": "Celtic (ISO 8859-14)" } },
-                    { "caption": "Central European (Windows 1250)", "command": "save", "args": {"encoding": "Central European (Windows 1250)" } },
-                    { "caption": "Central European (ISO 8859-2)", "command": "save", "args": {"encoding": "Central European (ISO 8859-2)" } },
-                    { "caption": "Cyrillic (Windows 1251)", "command": "save", "args": {"encoding": "Cyrillic (Windows 1251)" } },
-                    { "caption": "Cyrillic (Windows 866)", "command": "save", "args": {"encoding": "Cyrillic (Windows 866)" } },
-                    { "caption": "Cyrillic (ISO 8859-5)", "command": "save", "args": {"encoding": "Cyrillic (ISO 8859-5)" } },
-                    { "caption": "Cyrillic (KOI8-R)", "command": "save", "args": {"encoding": "Cyrillic (KOI8-R)" } },
-                    { "caption": "Cyrillic (KOI8-U)", "command": "save", "args": {"encoding": "Cyrillic (KOI8-U)" } },
-                    { "caption": "Estonian (ISO 8859-13)", "command": "save", "args": {"encoding": "Estonian (ISO 8859-13)" } },
-                    { "caption": "Greek (Windows 1253)", "command": "save", "args": {"encoding": "Greek (Windows 1253)" } },
-                    { "caption": "Greek (ISO 8859-7)", "command": "save", "args": {"encoding": "Greek (ISO 8859-7)" } },
-                    { "caption": "Hebrew (Windows 1255)", "command": "save", "args": {"encoding": "Hebrew (Windows 1255)" } },
-                    { "caption": "Hebrew (ISO 8859-8)", "command": "save", "args": {"encoding": "Hebrew (ISO 8859-8)" } },
-                    { "caption": "Nordic (ISO 8859-10)", "command": "save", "args": {"encoding": "Nordic (ISO 8859-10)" } },
-                    { "caption": "Romanian (ISO 8859-16)", "command": "save", "args": {"encoding": "Romanian (ISO 8859-16)" } },
-                    { "caption": "Turkish (Windows 1254)", "command": "save", "args": {"encoding": "Turkish (Windows 1254)" } },
-                    { "caption": "Turkish (ISO 8859-9)", "command": "save", "args": {"encoding": "Turkish (ISO 8859-9)" } },
-                    { "caption": "Vietnamese (Windows 1258)", "command": "save", "args": {"encoding": "Vietnamese (Windows 1258)" } },
+                    { "caption": "阿拉伯 (Windows 1256)", "command": "save", "args": {"encoding": "Arabic (Windows 1256)" } },
+                    { "caption": "阿拉伯 (ISO 8859-6)", "command": "save", "args": {"encoding": "Arabic (ISO 8859-6)" } },
+                    { "caption": "波罗的海 (Windows 1257)", "command": "save", "args": {"encoding": "Baltic (Windows 1257)" } },
+                    { "caption": "波罗的海 (ISO 8859-4)", "command": "save", "args": {"encoding": "Baltic (ISO 8859-4)" } },
+                    { "caption": "凯尔特 (ISO 8859-14)", "command": "save", "args": {"encoding": "Celtic (ISO 8859-14)" } },
+                    { "caption": "中欧 (Windows 1250)", "command": "save", "args": {"encoding": "Central European (Windows 1250)" } },
+                    { "caption": "中欧 (ISO 8859-2)", "command": "save", "args": {"encoding": "Central European (ISO 8859-2)" } },
+                    { "caption": "西里尔 (Windows 1251)", "command": "save", "args": {"encoding": "Cyrillic (Windows 1251)" } },
+                    { "caption": "西里尔 (Windows 866)", "command": "save", "args": {"encoding": "Cyrillic (Windows 866)" } },
+                    { "caption": "西里尔 (ISO 8859-5)", "command": "save", "args": {"encoding": "Cyrillic (ISO 8859-5)" } },
+                    { "caption": "西里尔 (KOI8-R)", "command": "save", "args": {"encoding": "Cyrillic (KOI8-R)" } },
+                    { "caption": "西里尔 (KOI8-U)", "command": "save", "args": {"encoding": "Cyrillic (KOI8-U)" } },
+                    { "caption": "爱沙尼亚 (ISO 8859-13)", "command": "save", "args": {"encoding": "Estonian (ISO 8859-13)" } },
+                    { "caption": "希腊 (Windows 1253)", "command": "save", "args": {"encoding": "Greek (Windows 1253)" } },
+                    { "caption": "希腊 (ISO 8859-7)", "command": "save", "args": {"encoding": "Greek (ISO 8859-7)" } },
+                    { "caption": "希伯来 (Windows 1255)", "command": "save", "args": {"encoding": "Hebrew (Windows 1255)" } },
+                    { "caption": "希伯来 (ISO 8859-8)", "command": "save", "args": {"encoding": "Hebrew (ISO 8859-8)" } },
+                    { "caption": "北欧 (ISO 8859-10)", "command": "save", "args": {"encoding": "Nordic (ISO 8859-10)" } },
+                    { "caption": "罗马尼亚 (ISO 8859-16)", "command": "save", "args": {"encoding": "Romanian (ISO 8859-16)" } },
+                    { "caption": "土耳其 (Windows 1254)", "command": "save", "args": {"encoding": "Turkish (Windows 1254)" } },
+                    { "caption": "土耳其 (ISO 8859-9)", "command": "save", "args": {"encoding": "Turkish (ISO 8859-9)" } },
+                    { "caption": "越南 (Windows 1258)", "command": "save", "args": {"encoding": "Vietnamese (Windows 1258)" } },
                     { "caption": "-" },
-                    { "caption": "Hexadecimal", "command": "save", "args": {"encoding": "Hexadecimal" } }
+                    { "caption": "十六进制", "command": "save", "args": {"encoding": "Hexadecimal" } }
                 ]
             },
-            { "command": "prompt_save_as", "caption": "Save As…", "mnemonic": "A" },
-            { "command": "save_all", "caption": "Save All", "mnemonic": "l" },
+            { "command": "prompt_save_as", "caption": "另存为...", "mnemonic": "A" },
+            { "command": "save_all", "caption": "全部保存", "mnemonic": "l" },
             { "caption": "-", "id": "window" },
-            { "command": "new_window", "caption": "New Window", "mnemonic": "W" },
-            { "command": "close_window", "caption": "Close Window" },
+            { "command": "new_window", "caption": "新建窗口", "mnemonic": "W" },
+            { "command": "close_window", "caption": "关闭窗口" },
             { "caption": "-", "id": "close" },
-            { "command": "close", "caption": "Close File", "mnemonic": "C" },
-            { "command": "revert", "caption": "Revert File", "mnemonic": "v" },
-            { "command": "close_all", "caption": "Close All Files" },
+            { "command": "close", "caption": "关闭文件", "mnemonic": "C" },
+            { "command": "revert", "caption": "恢复文件", "mnemonic": "v" },
+            { "command": "close_all", "caption": "关闭所有文件" },
             { "caption": "-", "id": "exit" },
-            { "command": "exit", "mnemonic": "x" }
+            { "command": "exit", "caption": "退出", "mnemonic": "x" }
         ]
     },
     {
-        "caption": "Edit",
+        "caption": "编辑",
         "mnemonic": "E",
         "id": "edit",
         "children":
         [
-            { "command": "undo", "mnemonic": "U" },
-            { "command": "redo_or_repeat", "mnemonic": "R" },
+            { "command": "undo", "caption": "撤销", "mnemonic": "U" },
+            { "command": "redo_or_repeat", "caption": "重做", "mnemonic": "R" },
             {
-                "caption": "Undo Selection",
+                "caption": "撤销选择",
                 "children":
                 [
-                    { "command": "soft_undo" },
-                    { "command": "soft_redo" }
+                    { "command": "soft_undo", "caption": "软撤销" },
+                    { "command": "soft_redo", "caption": "软重做" }
                 ]
             },
             { "caption": "-", "id": "clipboard" },
-            { "command": "copy", "mnemonic": "C" },
-            { "command": "cut", "mnemonic": "n" },
-            { "command": "paste", "mnemonic": "P" },
-            { "command": "paste_and_indent", "mnemonic": "I" },
-            { "command": "paste_from_history", "caption": "Paste from History" },
+            { "command": "copy", "caption": "复制", "mnemonic": "C" },
+            { "command": "cut", caption": "剪切", "mnemonic": "n" },
+            { "command": "paste", caption": "粘贴", "mnemonic": "P" },
+            { "command": "paste_and_indent", caption": "粘贴并缩进", "mnemonic": "I" },
+            { "command": "paste_from_history", "caption": "从历史记录粘贴" },
             { "caption": "-" },
             {
-                "caption": "Line", "mnemonic": "L",
+                "caption": "行", "mnemonic": "L",
                 "id": "line",
                 "children":
                 [
-                    { "command": "indent" },
-                    { "command": "unindent" },
-                    { "command": "reindent", "args": {"single_line": true} },
-                    { "command": "swap_line_up" },
-                    { "command": "swap_line_down" },
-                    { "command": "duplicate_line" },
-                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}, "caption": "Delete Line" },
-                    { "command": "join_lines" }
+                    { "command": "indent", caption": "缩进" },
+                    { "command": "unindent", caption": "取消缩进" },
+                    { "command": "reindent", caption": "重新缩进", "args": {"single_line": true} },
+                    { "command": "swap_line_up", caption": "向上切换行" },
+                    { "command": "swap_line_down", caption": "向下切换行" },
+                    { "command": "duplicate_line", caption": "复制光标所在行" },
+                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}, "caption": "删除行" },
+                    { "command": "join_lines", caption": "合并行" }
                 ]
             },
             {
-                "caption": "Comment", "mnemonic": "m",
+                "caption": "注释", "mnemonic": "m",
                 "id": "comment",
                 "children":
                 [
-                    { "command": "toggle_comment", "args": {"block": false}, "caption": "Toggle Comment" },
-                    { "command": "toggle_comment", "args": {"block": true}, "caption": "Toggle Block Comment" }
+                    { "command": "toggle_comment", "args": {"block": false}, "caption": "开启/关闭 注释整行" },
+                    { "command": "toggle_comment", "args": {"block": true}, "caption": "开启/关闭 注释已选择内容" }
                 ]
             },
             {
-                "caption": "Text", "mnemonic": "T",
+                "caption": "文本", "mnemonic": "T",
                 "id": "text",
                 "children":
                 [
-                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line Before.sublime-macro"}, "caption": "Insert Line Before" },
-                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"}, "caption": "Insert Line After" },
+                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line Before.sublime-macro"}, "caption": "插入到行首" },
+                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"}, "caption": "插入到行尾" },
                     { "caption": "-" },
-                    { "command": "delete_word", "args": { "forward": true }, "caption": "Delete Word Forward" },
-                    { "command": "delete_word", "args": { "forward": false }, "caption": "Delete Word Backward" },
-                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}, "caption": "Delete Line" },
-                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"}, "caption": "Delete to End" },
-                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"}, "caption": "Delete to Beginning" },
+                    { "command": "delete_word", "args": { "forward": true }, "caption": "向前删除单词" },
+                    { "command": "delete_word", "args": { "forward": false }, "caption": "向后删除单词" },
+                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}, "caption": "删除行" },
+                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"}, "caption": "删除至结尾处" },
+                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"}, "caption": "删除至起点处" },
                     { "caption": "-" },
                     { "command": "transpose" }
                 ]
             },
             {
-                "caption": "Tag",
+                "caption": "标签",
                 "id": "tag",
                 "children":
                 [
-                    { "command": "close_tag" },
-                    { "command": "expand_selection", "args": {"to": "tag"}, "caption": "Expand Selection to Tag" },
-                    { "command": "insert_snippet", "args": { "name": "Packages/XML/long-tag.sublime-snippet" }, "caption": "Wrap Selection With Tag" }
+                    { "command": "close_tag", caption": "设置标记" },
+                    { "command": "expand_selection", "args": {"to": "tag"}, "caption": "选择父标签对" },
+                    { "command": "insert_snippet", "args": { "name": "Packages/XML/long-tag.sublime-snippet" }, "caption": "包含所选内容的标签" }
                 ]
             },
             {
-                "caption": "Mark",
+                "caption": "标记",
                 "id": "mark",
                 "children":
                 [
-                    { "command": "set_mark" },
-                    { "command": "select_to_mark", "caption": "Select to Mark" },
-                    { "command": "delete_to_mark", "caption": "Delete to Mark" },
-                    { "command": "swap_with_mark", "caption": "Swap with Mark" },
-                    { "command": "clear_bookmarks", "args": {"name": "mark"}, "caption": "Clear Mark" },
+                    { "command": "set_mark", "caption": "设置标记" },
+                    { "command": "select_to_mark", "caption": "选择已标记" },
+                    { "command": "delete_to_mark", "caption": "删除已标记" },
+                    { "command": "swap_with_mark", "caption": "交换标记" },
+                    { "command": "clear_bookmarks", "args": {"name": "mark"}, "caption": "清除标记" },
                     { "caption": "-" },
-                    { "command": "yank" }
+                    { "command": "yank", "caption": "抽出" }
                 ]
             },
             {
-                "caption": "Code Folding",
+                "caption": "代码折叠",
                 "id": "fold",
                 "children":
                 [
-                    { "command": "fold" },
-                    { "command": "unfold" },
-                    { "command": "unfold_all", "caption": "Unfold All" },
+                    { "command": "fold", "caption": "折叠" },
+                    { "command": "unfold", "caption": "展开" },
+                    { "command": "unfold_all", "caption": "全部展开" },
                     { "caption": "-" },
-                    { "caption": "Fold All", "command": "fold_by_level", "args": {"level": 1} },
-                    { "caption": "Fold Level 2", "command": "fold_by_level", "args": {"level": 2} },
-                    { "caption": "Fold Level 3", "command": "fold_by_level", "args": {"level": 3} },
-                    { "caption": "Fold Level 4", "command": "fold_by_level", "args": {"level": 4} },
-                    { "caption": "Fold Level 5", "command": "fold_by_level", "args": {"level": 5} },
-                    { "caption": "Fold Level 6", "command": "fold_by_level", "args": {"level": 6} },
-                    { "caption": "Fold Level 7", "command": "fold_by_level", "args": {"level": 7} },
-                    { "caption": "Fold Level 8", "command": "fold_by_level", "args": {"level": 8} },
-                    { "caption": "Fold Level 9", "command": "fold_by_level", "args": {"level": 9} },
+                    { "caption": "Fold All", "caption": "全部折叠", "command": "fold_by_level", "args": {"level": 1} },
+                    { "caption": "折叠 2 层", "command": "fold_by_level", "args": {"level": 2} },
+                    { "caption": "折叠 3 层", "command": "fold_by_level", "args": {"level": 3} },
+                    { "caption": "折叠 4 层", "command": "fold_by_level", "args": {"level": 4} },
+                    { "caption": "折叠 5 层", "command": "fold_by_level", "args": {"level": 5} },
+                    { "caption": "折叠 6 层", "command": "fold_by_level", "args": {"level": 6} },
+                    { "caption": "折叠 7 层", "command": "fold_by_level", "args": {"level": 7} },
+                    { "caption": "折叠 8 层", "command": "fold_by_level", "args": {"level": 8} },
+                    { "caption": "折叠 9 层", "command": "fold_by_level", "args": {"level": 9} },
                     { "caption": "-" },
-                    { "command": "fold_tag_attributes", "caption": "Fold Tag Attributes" }
+                    { "command": "fold_tag_attributes", "caption": "折叠标签属性" }
                 ]
             },
             {
-                "caption": "Convert Case", "mnemonic": "a",
+                "caption": "转换大小写", "mnemonic": "a",
                 "id": "convert_case",
                 "children":
                 [
-                    { "command": "title_case", "caption": "Title Case" },
-                    { "command": "upper_case", "caption": "Upper Case" },
-                    { "command": "lower_case", "caption": "Lower Case" },
-                    { "command": "swap_case", "caption": "Swap Case" }
+                    { "command": "title_case", "caption": "首字母大写" },
+                    { "command": "upper_case", "caption": "改为大写" },
+                    { "command": "lower_case", "caption": "改为小写" },
+                    { "command": "swap_case", "caption": "切换大小写" }
                 ]
             },
             {
-                "caption": "Wrap",
+                "caption": "自动换行",
                 "id": "wrap",
                 "children":
                 [
-                    { "command": "wrap_lines", "caption": "Wrap Paragraph at Ruler" },
-                    { "command": "wrap_lines", "args": {"width": 70}, "caption": "Wrap paragraph at 70 characters" },
-                    { "command": "wrap_lines", "args": {"width": 78}, "caption": "Wrap paragraph at 78 characters" },
-                    { "command": "wrap_lines", "args": {"width": 80}, "caption": "Wrap paragraph at 80 characters" },
-                    { "command": "wrap_lines", "args": {"width": 100}, "caption": "Wrap paragraph at 100 characters" },
-                    { "command": "wrap_lines", "args": {"width": 120}, "caption": "Wrap paragraph at 120 characters" }
+                    { "command": "wrap_lines", "caption": "切换字符段落标尺" },
+                    { "command": "wrap_lines", "args": {"width": 70}, "caption": "70 个字符处换行" },
+                    { "command": "wrap_lines", "args": {"width": 78}, "caption": "78 个字符处换行" },
+                    { "command": "wrap_lines", "args": {"width": 80}, "caption": "80 个字符处换行" },
+                    { "command": "wrap_lines", "args": {"width": 100}, "caption": "100 个字符处换行" },
+                    { "command": "wrap_lines", "args": {"width": 120}, "caption": "120 个字符处换行" }
                 ]
             },
-            { "command": "auto_complete", "caption": "Show Completions" },
+            { "command": "auto_complete", "caption": "显示完成" },
             { "caption": "-", "id": "permute" },
 
-            { "command": "sort_lines", "args": {"case_sensitive": false}, "caption": "Sort Lines", "mnemonic": "S" },
-            { "command": "sort_lines", "args": {"case_sensitive": true}, "caption": "Sort Lines (Case Sensitive)" },
+            { "command": "sort_lines", "args": {"case_sensitive": false}, "caption": "按行排列", "mnemonic": "S" },
+            { "command": "sort_lines", "args": {"case_sensitive": true}, "caption": "按行排列（区分大小写）" },
             {
-                "caption": "Permute Lines",
+                "caption": "更改行的行列",
                 "children":
                 [
-                    { "command": "permute_lines", "args": {"operation": "reverse"}, "caption": "Reverse" },
-                    { "command": "permute_lines", "args": {"operation": "unique"}, "caption": "Unique" },
-                    { "command": "permute_lines", "args": {"operation": "shuffle"}, "caption": "Shuffle" }
+                    { "command": "permute_lines", "args": {"operation": "reverse"}, "caption": "反向" },
+                    { "command": "permute_lines", "args": {"operation": "unique"}, "caption": "唯一" },
+                    { "command": "permute_lines", "args": {"operation": "shuffle"}, "caption": "随机" }
                 ]
             },
             {
-                "caption": "Permute Selections",
+                "caption": "更改选择内容的行列",
                 "children":
                 [
-                    { "command": "sort_selection", "args": {"case_sensitive": false}, "caption": "Sort" },
-                    { "command": "sort_selection", "args": {"case_sensitive": true}, "caption": "Sort (Case Sensitive)" },
-                    { "command": "permute_selection", "args": {"operation": "reverse"}, "caption": "Reverse" },
-                    { "command": "permute_selection", "args": {"operation": "unique"}, "caption": "Unique" },
-                    { "command": "permute_selection", "args": {"operation": "shuffle"}, "caption": "Shuffle" }
+                    { "command": "sort_selection", "args": {"case_sensitive": false}, "caption": "排序" },
+                    { "command": "sort_selection", "args": {"case_sensitive": true}, "caption": "排序（区分大小写）" },
+                    { "command": "permute_selection", "args": {"operation": "reverse"}, "caption": "反向" },
+                    { "command": "permute_selection", "args": {"operation": "unique"}, "caption": "唯一" },
+                    { "command": "permute_selection", "args": {"operation": "shuffle"}, "caption": "随机" }
                 ]
             },
             { "caption": "-", "id": "end" }
         ]
     },
     {
-        "caption": "Selection",
+        "caption": "选择",
         "mnemonic": "S",
         "id": "selection",
         "children":
         [
-            { "command": "split_selection_into_lines", "caption": "Split into Lines" },
-            { "command": "select_lines", "args": {"forward": false}, "caption": "Add Previous Line" },
-            { "command": "select_lines", "args": {"forward": true}, "caption": "Add Next Line" },
-            { "command": "single_selection" },
-            { "command": "invert_selection" },
+            { "command": "split_selection_into_lines", "caption": "拆分成行" },
+            { "command": "select_lines", "args": {"forward": false}, "caption": "添加至前一行" },
+            { "command": "select_lines", "args": {"forward": true}, "caption": "添加至后一行" },
+            { "command": "single_selection", "caption": "单独选择" },
+            { "command": "invert_selection", "caption": "反选" },
             { "caption": "-" },
-            { "command": "select_all" },
-            { "command": "expand_selection", "args": {"to": "line"}, "caption": "Expand Selection to Line" },
-            { "command": "find_under_expand", "caption": "Expand Selection to Word" },
-            { "command": "expand_selection_to_paragraph", "caption": "Expand Selection to Paragraph" },
-            { "command": "expand_selection", "args": {"to": "scope"}, "caption": "Expand Selection to Scope" },
-            { "command": "expand_selection", "args": {"to": "brackets"}, "caption": "Expand Selection to Brackets" },
-            { "command": "expand_selection", "args": {"to": "indentation"}, "caption": "Expand Selection to Indentation" },
-            { "command": "expand_selection", "args": {"to": "tag"}, "caption": "Expand Selection to Tag" }
+            { "command": "select_all", "caption": "全选" },
+            { "command": "expand_selection", "args": {"to": "line"}, "caption": "展开选择整行" },
+            { "command": "find_under_expand", "caption": "展开选择单词" },
+            { "command": "expand_selection_to_paragraph", "caption": "展开选择整段" },
+            { "command": "expand_selection", "args": {"to": "scope"}, "caption": "展开选择范围" },
+            { "command": "expand_selection", "args": {"to": "brackets"}, "caption": "展开选择括号内的内容" },
+            { "command": "expand_selection", "args": {"to": "indentation"}, "caption": "展开选择缩进的内容" },
+            { "command": "expand_selection", "args": {"to": "tag"}, "caption": "展开选择标签内的内容" }
         ]
     },
     {
-        "caption": "Find",
+        "caption": "查找",
         "mnemonic": "i",
         "id": "find",
         "children":
         [
-            { "command": "show_panel", "args": {"panel": "find", "reverse": false}, "caption": "Find…" },
-            { "command": "find_next" },
-            { "command": "find_prev", "caption": "Find Previous" },
-            { "command": "show_panel", "args": {"panel": "incremental_find", "reverse": false}, "caption": "Incremental Find" },
+            { "command": "show_panel", "args": {"panel": "find", "reverse": false}, "caption": "查找..." },
+            { "command": "find_next", "caption": "查找下一个" },
+            { "command": "find_prev", "caption": "查找上一个" },
+            { "command": "show_panel", "args": {"panel": "incremental_find", "reverse": false}, "caption": "渐进式查找" },
             { "caption": "-" },
-            { "command": "show_panel", "args": {"panel": "replace", "reverse": false}, "caption": "Replace…" },
+            { "command": "show_panel", "args": {"panel": "replace", "reverse": false}, "caption": "替换..." },
             { "command": "replace_next" },
             { "caption": "-" },
-            { "command": "find_under", "caption": "Quick Find" },
-            { "command": "find_all_under", "caption": "Quick Find All" },
-            { "command": "find_under_expand", "caption": "Quick Add Next" },
-            { "command": "find_under_expand_skip", "caption": "Quick Skip Next", "platform": "!OSX" },
+            { "command": "find_under", "caption": "快速查找" },
+            { "command": "find_all_under", "caption": "快速查找全部" },
+            { "command": "find_under_expand", "caption": "快速选中下一个" },
+            { "command": "find_under_expand_skip", "caption": "快速跳转到下一个", "platform": "!OSX" },
             { "caption": "-" },
-            { "command": "slurp_find_string", "caption": "Use Selection for Find" },
-            { "command": "slurp_replace_string", "caption": "Use Selection for Replace" },
+            { "command": "slurp_find_string", "caption": "所选内容中查找" },
+            { "command": "slurp_replace_string", "caption": "所选内容中替换" },
             { "caption": "-" },
-            { "command": "show_panel", "args": {"panel": "find_in_files"}, "caption": "Find in Files…" },
+            { "command": "show_panel", "args": {"panel": "find_in_files"}, "caption": "在文件中查找..." },
             {
-                "caption": "Find Results",
+                "caption": "查找结果",
                 "mnemonic": "R",
                 "children":
                 [
-                    { "command": "show_panel", "args": {"panel": "output.find_results"}, "caption": "Show Results Panel" },
-                    { "command": "next_result" },
-                    { "command": "prev_result", "caption": "Previous Result" }
+                    { "command": "show_panel", "args": {"panel": "output.find_results"}, "caption": "显示结果面板" },
+                    { "command": "next_result", "caption": "下一个结果" },
+                    { "command": "prev_result", "caption": "上一个结果" }
                 ]
             }
         ]
     },
     {
-        "caption": "View",
+        "caption": "查看",
         "mnemonic": "V",
         "id": "view",
         "children":
         [
             {
-                "caption": "Side Bar",
+                "caption": "侧边栏",
                 "id": "side_bar",
                 "children":
                 [
-                    { "command": "toggle_side_bar" },
+                    { "command": "toggle_side_bar", "caption": "显示/隐藏 侧边栏" },
                     { "caption": "-" },
-                    { "command": "toggle_show_open_files" }
+                    { "command": "toggle_show_open_files", "caption": "显示打开的文件" }
                 ]
             },
-            { "command": "toggle_minimap" },
-            { "command": "toggle_tabs" },
-            { "command": "toggle_status_bar" },
-            { "command": "toggle_menu" },
-            { "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+            { "command": "toggle_minimap", "caption": "开启/关闭 迷你地图" },
+            { "command": "toggle_tabs", "caption": "开启/关闭 标签栏" },
+            { "command": "toggle_status_bar", "caption": "开启/关闭 状态栏" },
+            { "command": "toggle_menu", "caption": "开启/关闭 菜单" },
+            { "command": "show_panel", "caption": "显示面板", "args": {"panel": "console", "toggle": true} },
             { "caption": "-", "id": "full_screen" },
-            { "command": "toggle_full_screen" },
-            { "command": "toggle_distraction_free" },
+            { "command": "toggle_full_screen", "caption": "切换全屏显示" },
+            { "command": "toggle_distraction_free", "caption": "切换无干扰模式" },
             { "caption": "-", "id": "groups" },
             {
-                "caption": "Layout",
+                "caption": "布局",
                 "mnemonic": "L",
                 "id": "layout",
                 "children":
                 [
                     {
-                        "caption": "Single",
+                        "caption": "单独",
                         "command": "set_layout",
                         "args":
                         {
@@ -397,7 +397,7 @@
                         }
                     },
                     {
-                        "caption": "Columns: 2",
+                        "caption": "列：2",
                         "command": "set_layout",
                         "args":
                         {
@@ -407,7 +407,7 @@
                         }
                     },
                     {
-                        "caption": "Columns: 3",
+                        "caption": "列：3",
                         "command": "set_layout",
                         "args":
                         {
@@ -417,7 +417,7 @@
                         }
                     },
                     {
-                        "caption": "Columns: 4",
+                        "caption": "列：4",
                         "command": "set_layout",
                         "args":
                         {
@@ -427,7 +427,7 @@
                         }
                     },
                     {
-                        "caption": "Rows: 2",
+                        "caption": "行：2",
                         "command": "set_layout",
                         "args":
                         {
@@ -437,7 +437,7 @@
                         }
                     },
                     {
-                        "caption": "Rows: 3",
+                        "caption": "行：3",
                         "command": "set_layout",
                         "args":
                         {
@@ -447,7 +447,7 @@
                         }
                     },
                     {
-                        "caption": "Grid: 4",
+                        "caption": "网格：4",
                         "command": "set_layout",
                         "args":
                         {
@@ -463,41 +463,41 @@
                 ]
             },
             {
-                "caption": "Groups",
+                "caption": "分组",
                 "children":
                 [
-                    { "command": "new_pane", "caption": "Move File to New Group" },
-                    { "command": "new_pane", "args": {"move": false}, "caption": "New Group" },
-                    { "command": "close_pane", "caption": "Close Group" },
+                    { "command": "new_pane", "caption": "移动文件到新分组" },
+                    { "command": "new_pane", "args": {"move": false}, "caption": "新建组" },
+                    { "command": "close_pane", "caption": "关闭组" },
 
                     { "caption": "-" },
 
                     {
-                        "caption": "Max Columns: 1",
+                        "caption": "最大列：1",
                         "command": "set_max_columns",
                         "checkbox": true,
                         "args": { "columns": 1 }
                     },
                     {
-                        "caption": "Max Columns: 2",
+                        "caption": "最大列：2",
                         "command": "set_max_columns",
                         "checkbox": true,
                         "args": { "columns": 2 }
                     },
                     {
-                        "caption": "Max Columns: 3",
+                        "caption": "最大列：3",
                         "command": "set_max_columns",
                         "checkbox": true,
                         "args": { "columns": 3 }
                     },
                     {
-                        "caption": "Max Columns: 4",
+                        "caption": "最大列：4",
                         "command": "set_max_columns",
                         "checkbox": true,
                         "args": { "columns": 4 }
                     },
                     {
-                        "caption": "Max Columns: 5",
+                        "caption": "最大列：5",
                         "command": "set_max_columns",
                         "checkbox": true,
                         "args": { "columns": 5 }
@@ -505,66 +505,66 @@
                 ]
             },
             {
-                "caption": "Focus Group",
+                "caption": "交点分组",
                 "mnemonic": "F",
                 "children":
                 [
 
-                    { "command": "focus_neighboring_group", "caption": "Next" },
-                    { "command": "focus_neighboring_group", "args": {"forward": false}, "caption": "Previous" },
+                    { "command": "focus_neighboring_group", "caption": "下一个" },
+                    { "command": "focus_neighboring_group", "args": {"forward": false}, "caption": "上一个" },
                     { "caption": "-" },
-                    { "command": "focus_group", "args": {"group": 0}, "caption": "Group 1" },
-                    { "command": "focus_group", "args": {"group": 1}, "caption": "Group 2" },
-                    { "command": "focus_group", "args": {"group": 2}, "caption": "Group 3" },
-                    { "command": "focus_group", "args": {"group": 3}, "caption": "Group 4" }
+                    { "command": "focus_group", "args": {"group": 0}, "caption": "组 1" },
+                    { "command": "focus_group", "args": {"group": 1}, "caption": "组 2" },
+                    { "command": "focus_group", "args": {"group": 2}, "caption": "组 3" },
+                    { "command": "focus_group", "args": {"group": 3}, "caption": "组 4" }
                 ]
             },
             {
-                "caption": "Move File to Group",
+                "caption": "移动文件到分组",
                 "mnemonic": "M",
                 "children":
                 [
-                    { "command": "move_to_neighboring_group", "caption": "Next" },
-                    { "command": "move_to_neighboring_group", "args": {"forward": false}, "caption": "Previous" },
+                    { "command": "move_to_neighboring_group", "caption": "下一个" },
+                    { "command": "move_to_neighboring_group", "args": {"forward": false}, "caption": "上一个" },
                     { "caption": "-" },
-                    { "command": "move_to_group", "args": {"group": 0}, "caption": "Group 1" },
-                    { "command": "move_to_group", "args": {"group": 1}, "caption": "Group 2" },
-                    { "command": "move_to_group", "args": {"group": 2}, "caption": "Group 3" },
-                    { "command": "move_to_group", "args": {"group": 3}, "caption": "Group 4" }
+                    { "command": "move_to_group", "args": {"group": 0}, "caption": "组 1" },
+                    { "command": "move_to_group", "args": {"group": 1}, "caption": "组 2" },
+                    { "command": "move_to_group", "args": {"group": 2}, "caption": "组 3" },
+                    { "command": "move_to_group", "args": {"group": 3}, "caption": "组 4" }
                 ]
             },
             { "caption": "-" },
             {
-                "caption": "Syntax",
+                "caption": "语法",
                 "mnemonic": "S",
                 "id": "syntax",
                 "children": [ { "command": "$file_types" } ]
             },
             {
-                "caption": "Indentation",
+                "caption": "缩进",
                 "mnemonic": "I",
                 "id": "indentation",
                 "children":
                 [
-                    { "command": "toggle_setting", "args": {"setting": "translate_tabs_to_spaces"}, "caption": "Indent Using Spaces", "checkbox": true },
+                    { "command": "toggle_setting", "args": {"setting": "translate_tabs_to_spaces"}, "caption": "使用空格缩进", "checkbox": true },
                     { "caption": "-" },
-                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 1}, "caption": "Tab Width: 1", "checkbox": true },
-                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 2}, "caption": "Tab Width: 2", "checkbox": true },
-                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 3}, "caption": "Tab Width: 3", "checkbox": true },
-                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 4}, "caption": "Tab Width: 4", "checkbox": true },
-                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 5}, "caption": "Tab Width: 5", "checkbox": true },
-                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 6}, "caption": "Tab Width: 6", "checkbox": true },
-                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 7}, "caption": "Tab Width: 7", "checkbox": true },
-                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 8}, "caption": "Tab Width: 8", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 1}, "caption": "标签宽度：1", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 2}, "caption": "标签宽度：2", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 3}, "caption": "标签宽度：3", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 4}, "caption": "标签宽度：4", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 5}, "caption": "标签宽度：5", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 6}, "caption": "标签宽度：6", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 7}, "caption": "标签宽度：7", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 8}, "caption": "标签宽度：8", "checkbox": true },
                     { "caption": "-" },
-                    { "command": "detect_indentation", "caption": "Guess Settings From Buffer" },
+                    { "command": "detect_indentation", "caption": "猜测来自缓冲区的设置" },
                     { "caption": "-" },
-                    { "command": "expand_tabs", "caption": "Convert Indentation to Spaces", "args": {"set_translate_tabs": true} },
-                    { "command": "unexpand_tabs", "caption": "Convert Indentation to Tabs", "args": {"set_translate_tabs": true} }
+                    { "command": "expand_tabs", "caption": "转换缩进为空格", "args": {"set_translate_tabs": true} },
+                    { "command": "unexpand_tabs", "caption": "转换标签为 Tabs", "args": {"set_translate_tabs": true} }
                 ]
             },
             {
-                "caption": "Line Endings",
+                "caption": "行结束标识",
                 "mnemonic": "n",
                 "id": "line_endings",
                 "children":
