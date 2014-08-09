@@ -4,7 +4,7 @@
 - 运行 Sublime Text 3，点击 Preferences -> Browse Packages，会打开 Packages 目录
 - 将 Default.sublime-package 移动到 Packages 同层的 Install Packages 目录下即可。
 
-自己制作 sublime-package 方法
+打包 sublime-package 方法
 
 	zip -x ".git" -rX9 Default.sublime-package st3-zh_CN
 
