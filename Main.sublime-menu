@@ -797,7 +797,7 @@
         ]
     },
     {
-        "caption": "偏好设置",
+        "caption": "首选项",
         "mnemonic": "n",
         "id": "preferences",
         "children":
