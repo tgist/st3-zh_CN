@@ -14,6 +14,9 @@ def is_ws(str):
 
 def indented_block(view, r):
     if r.empty():
+        if r.a == view.size():
+            return False
+
         nl = next_line(view, r.a)
         nr = view.indented_region(nl)
         if nr.a < nl:

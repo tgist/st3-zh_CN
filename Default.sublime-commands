@@ -45,6 +45,7 @@
     { "caption": "Project: Close", "command": "close_workspace" },
     { "caption": "Project: Add Folder", "command": "prompt_add_folder" },
     { "caption": "Project: Refresh Folders", "command": "refresh_folder_list" },
+    { "caption": "Project: Edit Project",  "command": "open_file", "args": {"file": "${project}"} },
 
     { "caption": "Preferences: Settings - Default", "command": "open_file", "args": {"file": "${packages}/Default/Preferences.sublime-settings"} },
     { "caption": "Preferences: Settings - User", "command": "open_file", "args": {"file": "${packages}/User/Preferences.sublime-settings"} },
@@ -104,7 +105,7 @@
     { "caption": "File: New View into File", "command": "clone_file" },
     { "caption": "File: Close All", "command": "close_all" },
 
-    { "caption": "HTML: Wrap Selection With Tag", "command": "insert_snippet", "args": { "name": "Packages/XML/long-tag.sublime-snippet" } },
+    { "caption": "HTML: Wrap Selection With Tag", "command": "insert_snippet", "args": { "name": "Packages/XML/Snippets/long-tag.sublime-snippet" } },
     { "caption": "HTML: Encode Special Characters", "command": "encode_html_entities" },
 
     { "caption": "Rot13 Selection", "command": "rot13" },
@@ -125,5 +126,9 @@
     { "caption": "Code Folding: Unfold All", "command": "unfold_all" },
     { "caption": "Code Folding: Fold Tag Attributes", "command": "fold_tag_attributes" },
 
-    { "caption": "About", "command": "show_about_window" }
+    { "caption": "Plugin Development: Profile Events", "command": "profile_plugins" },
+    { "caption": "Plugin Development: Convert Syntax to .sublime-syntax", "command": "convert_syntax" },
+
+    { "caption": "About", "command": "show_about_window" },
+    { "caption": "Changelog", "command": "show_changelog" },
 ]

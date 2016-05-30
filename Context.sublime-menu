@@ -1,4 +1,7 @@
 [
+    { "command": "open_context_url", "caption": "打开链接" },
+    { "command": "context_goto_definition", "caption": "转到定义" },
+    { "caption": "-", "id": "clipboard" },
     { "command": "copy", "caption": "复制" },
     { "command": "cut", "caption": "剪切" },
     { "command": "paste", "caption": "粘贴" },

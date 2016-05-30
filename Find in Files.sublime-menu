@@ -1,8 +1,9 @@
 [
     { "command": "clear_location", "caption": "清除" },
     { "command": "add_directory", "caption": "添加目录" },
-    { "command": "add_where_snippet", "args": {"snippet": "*.${0:txt}"}, "caption": "添加包含过滤器" },
-    { "command": "add_where_snippet", "args": {"snippet": "-*.${0:txt}"}, "caption": "添加排除过滤器" },
+    { "command": "add_where_snippet", "args": {"snippet": "*.${0:txt}"}, "caption": "添加包含的过滤器" },
+    { "command": "add_where_snippet", "args": {"snippet": "-*.${0:txt}"}, "caption": "添加排除的过滤器" },
     { "command": "add_where_snippet", "args": {"snippet": "<open folders>"}, "caption": "添加打开的文件夹" },
-    { "command": "add_where_snippet", "args": {"snippet": "<open files>"}, "caption": "添加打开的文件" }
+    { "command": "add_where_snippet", "args": {"snippet": "<open files>"}, "caption": "添加打开的文件" },
+    { "command": "add_where_snippet", "args": {"snippet": "<current file>"}, "caption": "添加当前文件" },
 ]
