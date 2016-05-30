@@ -38,5 +38,5 @@ class SwitchFileCommand(sublime_plugin.WindowCommand):
             new_path = base + '.' + extensions[idx]
 
             if os.path.exists(new_path):
-                self.window.open_file(new_path)
+                self.window.open_file(new_path, flags = sublime.FORCE_GROUP)
                 break

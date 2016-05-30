@@ -7,7 +7,7 @@
     // Sets the colors used within the text area
     "color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 
-    // Note that the font_face and font_size are overriden in the platform
+    // Note that the font_face and font_size are overridden in the platform
     // specific settings file, for example, "Preferences (Linux).sublime-settings".
     // Because of this, setting them here will have no effect: you must set them
     // in your User File Preferences.
@@ -93,12 +93,15 @@
     // Word list to use for spell checking
     "dictionary": "Packages/Language - English/en_US.dic",
 
+    // Sets which scopes are checked for spelling errors
+    "spelling_selector": "markup.raw, source string.quoted - punctuation - meta.preprocessor.c.include, source comment - source comment.block.preprocessor, -(source, constant, keyword, storage, support, variable, markup.underline.link, meta.tag)",
+
     // Set to true to draw a border around the visible rectangle on the minimap.
     // The color of the border will be determined by the "minimapBorder" key in
     // the color scheme
     "draw_minimap_border": false,
 
-    // Always visualise the viewport on the minimap, as oppossed to only
+    // Always visualise the viewport on the minimap, as opposed to only
     // showing it on mouse over
     "always_show_minimap_viewport": false,
 
@@ -183,7 +186,7 @@
 
     // Save via writing to an alternate file, and then renaming it over the
     // original file.
-    "atomic_save": true,
+    "atomic_save": false,
 
     // The encoding to use when the encoding can't be determined automatically.
     // ASCII, UTF-8 and UTF-16 encodings will be automatically detected.
@@ -220,7 +223,7 @@
     "auto_complete_delay": 50,
 
     // Controls what scopes auto complete will be triggered in
-    "auto_complete_selector": "source - comment, meta.tag - punctuation.definition.tag.begin",
+    "auto_complete_selector": "meta.tag - punctuation.definition.tag.begin, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
 
     // Additional situations to trigger auto complete
     "auto_complete_triggers": [ {"selector": "text.html", "characters": "<"} ],
@@ -234,6 +237,12 @@
     // Controls if auto complete is shown when snippet fields are active.
     // Only relevant if auto_complete_commit_on_tab is true.
     "auto_complete_with_fields": false,
+
+    // Controls what happens when pressing the up key while the first item in
+    // the auto complete window is selected: if false, the window is hidden,
+    // otherwise the last item in the window is selected. Likewise for the
+    // down key when the last item is selected.
+    "auto_complete_cycle": false,
 
     // Automatically close HTML and XML tags when </ is entered.
     "auto_close_tags": true,
@@ -324,10 +333,10 @@
     // alongside the project.
     "hot_exit": true,
 
-    // remember_open_files makes the application start up with the last set of
-    // open files. Changing this to false will have no effect if hot_exit is
-    // true
-    "remember_open_files": true,
+    // remember_full_screen will allow Sublime Text to start in full screen
+    // mode if it was exited in full screen mode. When set to false, Sublime
+    // Text will never start in full screen mode.
+    "remember_full_screen": false,
 
     // Always prompt before reloading a file, even if the file hasn't been
     // modified. The default behavior is to automatically reload a file if it
@@ -343,8 +352,9 @@
     "create_window_at_startup": true,
 
     // Set to true to close windows as soon as the last file is closed, unless
-    // there's a folder open within the window. This is always enabled on OS X,
-    // changing it here won't modify the behavior.
+    // there's a folder open within the window.
+    // On OS X, this value is overridden in the platform specific settings, so
+    // you'll need to place this line in your user settings to override it.
     "close_windows_when_empty": false,
 
     // Show the full path to files in the title bar.
@@ -373,17 +383,13 @@
     // their symbols. This is required for Goto Definition to work.
     "index_files": true,
 
+    // Set the number threads to use for indexing. A value of 0 will make
+    // Sublime Text guess based on the number of cores. Use the index_files
+    // setting to disable all workers.
+    "index_workers": 0,
+
     // index_exclude_patterns indicate which files won't be indexed.
     "index_exclude_patterns": ["*.log"],
-
-    // When enabled, anonymised usage data is sent back, assisting Sublime HQ
-    // in making informed decisions about improving Sublime Text. File names
-    // and file contents are never included, but data such as computer
-    // specifications, startup time, installed packages, and edited file types
-    // are. When disabled, telemetry is neither recorded or sent.
-    // A setting of auto will enable telemetry in dev builds, and disable
-    // telemetry in regular builds.
-    "enable_telemetry": "auto",
 
     // List any packages to ignore here. When removing entries from this list,
     // a restart may be required if the package contains plugins.

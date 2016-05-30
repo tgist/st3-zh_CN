@@ -31,14 +31,20 @@ class NewFolderCommand(sublime_plugin.WindowCommand):
         self.window.show_input_panel("Folder Name:", "", functools.partial(self.on_done, dirs[0]), None, None)
 
     def on_done(self, dir, name):
-        os.makedirs(os.path.join(dir, name))
+        os.makedirs(os.path.join(dir, name), 0o775)
 
     def is_visible(self, dirs):
         return len(dirs) == 1
 
 class DeleteFolderCommand(sublime_plugin.WindowCommand):
     def run(self, dirs):
-        if sublime.ok_cancel_dialog("Delete Folder?", "Delete"):
+
+        if len(dirs) == 1:
+            message = "Delete Folder %s?" % dirs[0]
+        else:
+            message = "Delete %d Folders?" % len(dirs)
+
+        if sublime.ok_cancel_dialog(message, "Delete"):
             import Default.send2trash as send2trash
             try:
                 for d in dirs:
@@ -61,12 +67,20 @@ class RenamePathCommand(sublime_plugin.WindowCommand):
     def on_done(self, old, branch, leaf):
         new = os.path.join(branch, leaf)
 
+        if new == old:
+            return
+
         try:
+            if os.path.isfile(new):
+                raise OSError("File already exists")
+
             os.rename(old, new)
 
             v = self.window.find_open_file(old)
             if v:
                 v.retarget(new)
+        except OSError as e:
+            sublime.status_message("Unable to rename: " + str(e))
         except:
             sublime.status_message("Unable to rename")
 
