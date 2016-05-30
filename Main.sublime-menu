@@ -85,7 +85,7 @@
                 "children":
                 [
                     { "caption": "UTF-8", "command": "save", "args": {"encoding": "utf-8" } },
-                    { "caption": "UTF-8 with BOM", "command": "save", "args": {"encoding": "utf-8 with bom" } },
+                    { "caption": "UTF-8 含 BOM", "command": "save", "args": {"encoding": "utf-8 with bom" } },
                     { "caption": "UTF-16 LE", "command": "save", "args": {"encoding": "utf-16 le" } },
                     { "caption": "UTF-16 LE 含 BOM", "command": "save", "args": {"encoding": "utf-16 le with bom" } },
                     { "caption": "UTF-16 BE", "command": "save", "args": {"encoding": "utf-16 be" } },
@@ -222,7 +222,7 @@
                     { "command": "swap_with_mark", "caption": "交换标记" },
                     { "command": "clear_bookmarks", "args": {"name": "mark"}, "caption": "清除标记" },
                     { "caption": "-" },
-                    { "command": "yank", "caption": "设置抽出" }
+                    { "command": "yank", "caption": "抽出" }
                 ]
             },
             {
@@ -376,7 +376,7 @@
             { "command": "toggle_tabs", "caption": "打开/关闭 标签栏" },
             { "command": "toggle_status_bar", "caption": "打开/关闭 状态栏" },
             { "command": "toggle_menu", "caption": "打开/关闭 菜单" },
-            { "command": "show_panel", "caption": "显示面板", "args": {"panel": "console", "toggle": true} },
+            { "command": "show_panel", "caption": "打开/关闭 面板", "args": {"panel": "console", "toggle": true} },
             { "caption": "-", "id": "full_screen" },
             { "command": "toggle_full_screen", "caption": "切换全屏显示" },
             { "command": "toggle_distraction_free", "caption": "切换免打扰模式" },
